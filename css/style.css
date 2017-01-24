@@ -58,6 +58,10 @@ a.header-font {
 
 /* ========================= NAVIGATION ========================= */
 
+.nav-container_width {
+    max-width: 1300px;
+}
+
 .navbar-header a.navbar-brand.navbar-brand.navbar-brand {
     color: #7a1501;
     transition: color 0.2s;
