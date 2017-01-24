@@ -7,8 +7,30 @@ html, body {
     padding: 0;
 }
 
-body {
-    overflow: hidden;
+.header-font {
+    font-family: 'Overpass', sans-serif;
+}
+
+.header-font .serif-font {
+    font-family: serif;
+}
+
+h2.header-font, a.header-font {
+    font-weight: 300;
+}
+
+a.header-font {
+    font-size: 18px;
+    padding: 15px 20px;
+}
+
+.header-font a:hover {
+    text-decoration: none;
+}
+
+.content-font.content-font.content-font.content-font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 .jumbotron.jumbotron-height {
@@ -22,17 +44,41 @@ body {
 
 .jumbotron.jumbotron-margin.jumbotron-height .container h1 {
     font-size: 48px;
-    color: #971b02;
+    color: #7a1501;
     margin: 30px 0 0;
+    padding: 15px 0;
 }
 
 .class-text_color {
     color: #971b02;
-    background-color: lightgray;
+    background-color: #EEEEEE;
+    padding: 0 5px;
 }
 
 
 /* ========================= NAVIGATION ========================= */
+
+.navbar-header a.navbar-brand.navbar-brand.navbar-brand {
+    color: #7a1501;
+    transition: color 0.2s;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.navbar-header a.navbar-brand.navbar-brand.navbar-brand:hover {
+    color: #971b02;
+}
+
+.dropdown-menu li a.header-font {
+    font-size: 18px;
+    padding: 7.5px 15px;
+}
+
+.dropdown-menu.dropdown-menu.dropdown-menu.dropdown-menu {
+    min-width: 200px;
+    padding: 7.5px 0;
+}
 
 nav.navbar-shadow {
     box-shadow: 0 1px 10px #333;
@@ -40,6 +86,9 @@ nav.navbar-shadow {
 
 
 /* ========================= HEADER ========================= */
+
+
+
 
 
 /* ========================= MAIN ========================= */
@@ -52,6 +101,7 @@ nav.navbar-shadow {
     background-repeat: no-repeat;
     margin-left: 0;
     overflow: hidden;
+    max-height: 100vh;
 }
 
 .jumbotron.jumbo-main_background .col-md-7 {
@@ -68,37 +118,36 @@ nav.navbar-shadow {
     text-align: center;
 }
 
-.jumbotron.jumbo-main_background .col-md-3 h1 {
-    font-size: 50vh;
-    color: white;
-}
-
 .thumbnail.thumbnail {
     padding: 15px;
-}
-
-.jumbotron.jumbo-tech_background {
-    background-color: lightsalmon;
-}
-
-.jumbotron.jumbo-gov_background {
-    background-color: seagreen;
-}
-
-.jumbotron.jumbo-ed_background {
-    background-color: darkred;
-}
-
-.jumbotron.jumbo-social_background {
-    background-color: lightblue;
 }
 
 .nav.nav-tabs, .nav.nav-pills {
     margin: 15px 0;
 }
 
+.vs {
+    font-size: 18px;
+    color: #971b02;
+}
+
+.jumbotron.jumbotron-margin.jumbotron-height .container .small-content p {
+    font-size: 16px;
+}
+
+.panel-group {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+h1.header-font a, h2.header-font a {
+    color: #7a1501;
+    text-decoration: none;
+}
+
 
 /* ========================= FOOTER ========================= */
+
 
 /* ========================= MEDIA QUERIES ========================= */
 
@@ -118,7 +167,6 @@ nav.navbar-shadow {
         max-height: 350px;
         height: 350px;
     }
-
     .jumbotron.jumbo-main_background .col-md-7 {
         min-height: 100%;
         max-height: 350px;
@@ -127,7 +175,6 @@ nav.navbar-shadow {
         flex-direction: column;
         justify-content: center;
     }
-
     .jumbotron.jumbotron-margin.jumbotron-height.jumbo-main_background .col-md-7 h1 {
         font-size: 18vw;
         color: white;
